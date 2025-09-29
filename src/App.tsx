@@ -226,6 +226,89 @@ const App = () => {
           </div>
         </div>
       </section>
+      <section className="app-featured py-12">
+        <div className="container mx-auto max-w-screen-xl">
+          <div className="flex flex-col items-start">
+            <div className="block">
+              <h4 className="text-5xl tracking-wide font-medium text-zinc-950">
+                Get in touch with me
+              </h4>
+              <p className="max-w-xl text-zinc-600 leading-7 mt-4">
+                Let's bring your ideas to life. With my expertise in Envato
+                design and development, we can create something truly remarkable
+              </p>
+            </div>
+            <div className="block mt-4">
+              <form method="post" className="get-it-touch-form">
+                <div className="flex flex-row flex-wrap gap-y-6">
+                  <div className="max-w-1/2 w-full flex flex-col pr-14">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      What’s your name?
+                    </label>
+                    <input
+                      type="name"
+                      placeholder="Orion Paul"
+                      className="border border-zinc-300 rounded-full px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm"
+                    />
+                  </div>
+                  <div className="flex flex-col max-w-1/2 w-full">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      Enter your email address
+                    </label>
+                    <input
+                      className="border border-zinc-300 rounded-full px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm"
+                      type="email"
+                      placeholder="Orion2345@gmail.com"
+                    />
+                  </div>
+                  <div className="flex flex-col max-w-1/2 w-full pr-14">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      What service are you interested in?
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="border border-zinc-300 rounded-full px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm"
+                      placeholder="Personal Portfolio"
+                    />
+                  </div>
+                  <div className="flex flex-col max-w-1/2 w-full">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      What's your ballpark budget?
+                    </label>
+                    <input
+                      type="text"
+                      className="border border-zinc-300 rounded-full px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm"
+                      name="name"
+                      placeholder="$2,600"
+                    />
+                  </div>
+                  <div className="flex flex-col w-full">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      Do you already have a website?
+                    </label>
+                    <input
+                      type="text"
+                      className="border border-zinc-300 rounded-full px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm"
+                      name="name"
+                      placeholder="iliyazandi.com"
+                    />
+                  </div>
+                  <div className="flex flex-col w-full">
+                    <label className="text-zinc-900 mb-2.5 font-normal">
+                      How can I help you?
+                    </label>
+                    <textarea
+                      className="border border-zinc-300 rounded-2xl px-5 py-2.5 text-normal text-zinc-800 placeholder:text-zinc-700 placeholder:font-light placeholder:text-sm min-h-[120px]"
+                      placeholder="Hey! Could you help me ......"
+                    ></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
