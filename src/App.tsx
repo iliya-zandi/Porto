@@ -9,6 +9,7 @@ import Featured3 from "./assets/images/featured-3.jpg";
 import Featured4 from "./assets/images/featured-4.jpg";
 
 import { RiInstagramLine, RiGithubLine } from "react-icons/ri";
+import Button from "./components/Button";
 
 const App = () => {
   return (
@@ -69,12 +70,9 @@ const App = () => {
                       placeholder="Email address"
                       className="border border-zinc-400/50 rounded-full px-8 font-normal placeholder:text-zinc-600 text-zinc-800 min-w-xs py-3"
                     />
-                    <button
-                      className="px-8 py-3 ml-4 text-zinc-100 bg-zinc-950 rounded-3xl"
-                      type="button"
-                    >
+                    <Button className="ml-4" type="submit">
                       <span>Subscribe</span>
-                    </button>
+                    </Button>
                   </div>
                 </form>
               </section>
@@ -165,12 +163,7 @@ const App = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <a
-              href=""
-              className="bg-zinc-950 rounded-full text-zinc-200 font-medium text-center inline-block px-8 py-3.5"
-            >
-              View all Showcases
-            </a>
+            <Button className="px-8 py-3.5">View all Showcases</Button>
           </div>
         </div>
       </section>
@@ -322,12 +315,10 @@ const App = () => {
               Have a beautiful and restful Sunday!
             </h6>
             <div className="inline-flex flex-row items-center gap-x-4">
-              <a
-                href="/"
-                className="text-zinc-300 bg-zinc-950 rounded-full px-8 py-2.5 font-medium order-2"
-              >
+              <Button className="order-2" link="/">
                 Get in Touch
-              </a>
+              </Button>
+
               <ul className="flex items-center gap-x-4">
                 <li>
                   <a href="">
