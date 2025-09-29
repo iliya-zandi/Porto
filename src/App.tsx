@@ -172,6 +172,60 @@ const App = () => {
           </div>
         </div>
       </section>
+      <section className="app-featured py-12">
+        <div className="container mx-auto max-w-screen-xl">
+          <h3 className="box-title text-6xl text-zinc-950 text-center font-medium">
+            Let’s work together
+          </h3>
+          <div className="featured-cards py-14">
+            <div className="flex items-baseline justify-between gap-x-12">
+              <section className="flex flex-col items-start bg-zinc-100 rounded-2xl p-16 gap-y-4">
+                <h4 className="text-2xl font-medium text-zinc-900">
+                  Full portfolio website
+                  <span className="text-zinc-500 ml-2 -mt-2 text-lg">
+                    $2,700
+                  </span>
+                </h4>
+                <p className="leading-8 text-zinc-700">
+                  Transform your concepts into captivating digital experiences
+                  with bespoke single-page website meticulously designed and
+                  developed in Themeforest
+                </p>
+                <a
+                  href="/"
+                  className="border border-zinc-300 bg-white py-3 px-8 rounded-full text-zinc-900 font-normal"
+                >
+                  Discover Work
+                </a>
+              </section>
+              <section className="relative flex flex-col items-start bg-zinc-50 rounded-2xl p-16 gap-y-4">
+                <div className="relative block w-full">
+                  <span className="order-2 text-zinc-300 bg-zinc-950 px-4 py-1.5 rounded-full text-sm absolute right-0">
+                    Special Offer!
+                  </span>
+                  <h4 className="text-2xl font-medium text-zinc-900">
+                    Envato landing page
+                    <span className="text-zinc-500 ml-2 -mt-2 text-lg">
+                      $1,970
+                    </span>
+                  </h4>
+                </div>
+                <p className="leading-8 text-zinc-700">
+                  Transform your concepts into captivating digital experiences
+                  with bespoke single-page website meticulously designed and
+                  developed in Themeforest
+                </p>
+                <a
+                  href="/"
+                  className="border border-zinc-300 bg-white py-3 px-8 rounded-full text-zinc-900 font-normal"
+                >
+                  Discover Work
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
