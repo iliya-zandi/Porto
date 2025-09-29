@@ -8,8 +8,16 @@ import Featured2 from "./assets/images/featured-2.jpg";
 import Featured3 from "./assets/images/featured-3.jpg";
 import Featured4 from "./assets/images/featured-4.jpg";
 
+const featuredData = [
+  { image: Featured1, title: "Rando Honda", year: "2025", link: "/" },
+  { image: Featured2, title: "Rando Honda", year: "2025", link: "/" },
+  { image: Featured3, title: "Rando Honda", year: "2025", link: "/" },
+  { image: Featured4, title: "Rando Honda", year: "2025", link: "/" },
+];
+
 import { RiInstagramLine, RiGithubLine } from "react-icons/ri";
 import Button from "./components/Button";
+import FeaturedItem from "./components/FeaturedItem";
 
 const App = () => {
   return (
@@ -96,70 +104,15 @@ const App = () => {
           </h3>
           <div className="featured-cards pt-22 pb-12">
             <div className="grid grid-cols-2 justify-between gap-x-15 gap-y-5">
-              <article className="featured-item">
-                <div className="inline-block">
-                  <a href="/" className="block">
-                    <img
-                      src={Featured1}
-                      className="max-w-full overflow-hidden rounded-4xl"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between py-6 px-2">
-                    <a href="/" className="text-zinc-800">
-                      <h4 className="text-2xl font-medium">Rando Honda</h4>
-                    </a>
-                    <span className="text-lg font-normal">/2025</span>
-                  </div>
-                </div>
-              </article>
-              <article className="featured-item">
-                <div className="inline-block">
-                  <a href="/" className="block">
-                    <img
-                      src={Featured2}
-                      className="max-w-full overflow-hidden rounded-4xl"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between py-6 px-2">
-                    <a href="/" className="text-zinc-800">
-                      <h4 className="text-2xl font-medium">Rando Honda</h4>
-                    </a>
-                    <span className="text-lg font-normal">/2025</span>
-                  </div>
-                </div>
-              </article>
-              <article className="featured-item">
-                <div className="inline-block">
-                  <a href="/" className="block">
-                    <img
-                      src={Featured3}
-                      className="max-w-full overflow-hidden rounded-4xl"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between py-6 px-2">
-                    <a href="/" className="text-zinc-800">
-                      <h4 className="text-2xl font-medium">Rando Honda</h4>
-                    </a>
-                    <span className="text-lg font-normal">/2025</span>
-                  </div>
-                </div>
-              </article>
-              <article className="featured-item">
-                <div className="inline-block">
-                  <a href="/" className="block">
-                    <img
-                      src={Featured4}
-                      className="max-w-full overflow-hidden rounded-4xl"
-                    />
-                  </a>
-                  <div className="flex items-center justify-between py-6 px-2">
-                    <a href="/" className="text-zinc-800">
-                      <h4 className="text-2xl font-medium">Rando Honda</h4>
-                    </a>
-                    <span className="text-lg font-normal">/2025</span>
-                  </div>
-                </div>
-              </article>
+              {featuredData.map((item, index) => (
+                <FeaturedItem
+                  key={index}
+                  image={item.image}
+                  title={item.title}
+                  year={item.year}
+                  link={item.link}
+                />
+              ))}
             </div>
           </div>
           <div className="flex items-center justify-center">
