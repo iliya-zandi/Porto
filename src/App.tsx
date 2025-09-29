@@ -3,6 +3,11 @@ import { FiAlignCenter, FiSearch, FiMoon } from "react-icons/fi";
 import LineGrid from "./assets/images/line-grid.png";
 import Thumbnail from "./assets/images/thumbnail.jpg";
 
+import Featured1 from "./assets/images/featured-1.jpg";
+import Featured2 from "./assets/images/featured-2.jpg";
+import Featured3 from "./assets/images/featured-3.jpg";
+import Featured4 from "./assets/images/featured-4.jpg";
+
 const App = () => {
   return (
     <div className="app">
@@ -84,6 +89,89 @@ const App = () => {
           </div>
         </div>
       </header>
+      <section className="app-featured py-24">
+        <div className="container mx-auto max-w-screen-xl">
+          <h3 className="box-title text-9xl text-zinc-950 text-center font-medium">
+            Featured work©
+          </h3>
+          <div className="featured-cards pt-22 pb-12">
+            <div className="grid grid-cols-2 justify-between gap-x-15 gap-y-5">
+              <article className="featured-item">
+                <div className="inline-block">
+                  <a href="/" className="block">
+                    <img
+                      src={Featured1}
+                      className="max-w-full overflow-hidden rounded-4xl"
+                    />
+                  </a>
+                  <div className="flex items-center justify-between py-6 px-2">
+                    <a href="/" className="text-zinc-800">
+                      <h4 className="text-2xl font-medium">Rando Honda</h4>
+                    </a>
+                    <span className="text-lg font-normal">/2025</span>
+                  </div>
+                </div>
+              </article>
+              <article className="featured-item">
+                <div className="inline-block">
+                  <a href="/" className="block">
+                    <img
+                      src={Featured2}
+                      className="max-w-full overflow-hidden rounded-4xl"
+                    />
+                  </a>
+                  <div className="flex items-center justify-between py-6 px-2">
+                    <a href="/" className="text-zinc-800">
+                      <h4 className="text-2xl font-medium">Rando Honda</h4>
+                    </a>
+                    <span className="text-lg font-normal">/2025</span>
+                  </div>
+                </div>
+              </article>
+              <article className="featured-item">
+                <div className="inline-block">
+                  <a href="/" className="block">
+                    <img
+                      src={Featured3}
+                      className="max-w-full overflow-hidden rounded-4xl"
+                    />
+                  </a>
+                  <div className="flex items-center justify-between py-6 px-2">
+                    <a href="/" className="text-zinc-800">
+                      <h4 className="text-2xl font-medium">Rando Honda</h4>
+                    </a>
+                    <span className="text-lg font-normal">/2025</span>
+                  </div>
+                </div>
+              </article>
+              <article className="featured-item">
+                <div className="inline-block">
+                  <a href="/" className="block">
+                    <img
+                      src={Featured4}
+                      className="max-w-full overflow-hidden rounded-4xl"
+                    />
+                  </a>
+                  <div className="flex items-center justify-between py-6 px-2">
+                    <a href="/" className="text-zinc-800">
+                      <h4 className="text-2xl font-medium">Rando Honda</h4>
+                    </a>
+                    <span className="text-lg font-normal">/2025</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <a
+              href=""
+              className="bg-zinc-950 rounded-full text-zinc-200 font-medium text-center inline-block px-8 py-3.5"
+            >
+              View all Showcases
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
