@@ -8,6 +8,8 @@ import Featured2 from "./assets/images/featured-2.jpg";
 import Featured3 from "./assets/images/featured-3.jpg";
 import Featured4 from "./assets/images/featured-4.jpg";
 
+import { RiInstagramLine, RiGithubLine } from "react-icons/ri";
+
 const App = () => {
   return (
     <div className="app">
@@ -309,6 +311,42 @@ const App = () => {
           </div>
         </div>
       </section>
+      <footer className="block py-24 relative overflow-hidden">
+        <div className="container mx-auto max-w-screen-xl">
+          <img src={LineGrid} className="absolute top-0 " />
+          <h3 className="text-zinc-950 text-center font-semibold text-9xl mb-12">
+            Warm thanks!
+          </h3>
+          <div className="flex flex-col items-center gap-y-4">
+            <h6 className="text-lg text-zinc-800 font-normal">
+              Have a beautiful and restful Sunday!
+            </h6>
+            <div className="inline-flex flex-row items-center gap-x-4">
+              <a
+                href="/"
+                className="text-zinc-300 bg-zinc-950 rounded-full px-8 py-2.5 font-medium order-2"
+              >
+                Get in Touch
+              </a>
+              <ul className="flex items-center gap-x-4">
+                <li>
+                  <a href="">
+                    <RiInstagramLine size={28} style={{ strokeWidth: 0 }} />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <RiGithubLine size={28} style={{ strokeWidth: 0 }} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <span className="text-sm mt-10 text-zinc-700">
+              © 2025 Proto (iliyazandi). All rights reserved by Themepure.
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
