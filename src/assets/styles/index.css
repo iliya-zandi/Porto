@@ -21,4 +21,7 @@
   .container {
     @apply container mx-auto max-w-full md:max-w-screen-xl px-4 lg:px-8 xl:px-0;
   }
+  .box {
+    @apply py-8 lg:py-24;
+  }
 }
