@@ -1,9 +1,17 @@
+/**
+ * Thanks Component
+ * Renders a thank-you section with a title, message, action button, social links, and copyright.
+ */
+
 import React from "react";
 import LineGrid from "./assets/images/line-grid.png";
 import { RiInstagramLine, RiGithubLine } from "react-icons/ri";
 import Button from "./components/Button";
 
-const Thanks = () => {
+/**
+ * Thanks functional component
+ */
+const Thanks: React.FC = () => {
   return (
     <div className="relative py-16 block py-24 relative overflow-hidden">
       <div className="container mx-auto max-w-screen-xl relative">
@@ -46,3 +54,6 @@ const Thanks = () => {
 };
 
 export default Thanks;
+/**
+ * Exporting Thanks as default for use in other components.
+ */

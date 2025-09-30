@@ -1,10 +1,20 @@
+/**
+ * ContactForm Component
+ * Renders a contact form section where users can submit their information.
+ * Includes fields for name, email, service, budget, existing website, and message.
+ */
+
 import React from "react";
 
-const ContactForm = () => {
+/**
+ * Main ContactForm component
+ */
+const ContactForm: React.FC = () => {
   return (
     <div className="box">
       <div className="container mx-auto max-w-screen-xl py-16">
         <div className="flex flex-col items-start gap-y-8">
+          {/* Heading and description */}
           <div className="block">
             <h4 className="text-3xl sm:text-4xl lg:text-5xl tracking-wide font-medium text-zinc-950">
               Get in touch with me
@@ -15,8 +25,10 @@ const ContactForm = () => {
             </p>
           </div>
 
+          {/* Form */}
           <form method="post" className="w-full">
             <div className="flex flex-col gap-y-6">
+              {/* Row 1: Name & Email */}
               <div className="flex flex-col lg:flex-row gap-6 w-full">
                 <div className="flex flex-col w-full lg:w-1/2">
                   <label className="text-zinc-900 mb-2.5 font-normal">
@@ -41,6 +53,7 @@ const ContactForm = () => {
                 </div>
               </div>
 
+              {/* Row 2: Service & Budget */}
               <div className="flex flex-col lg:flex-row gap-6 w-full">
                 <div className="flex flex-col w-full lg:w-1/2">
                   <label className="text-zinc-900 mb-2.5 font-normal">
@@ -65,6 +78,7 @@ const ContactForm = () => {
                 </div>
               </div>
 
+              {/* Row 3: Existing Website */}
               <div className="flex flex-col w-full">
                 <label className="text-zinc-900 mb-2.5 font-normal">
                   Do you already have a website?
@@ -76,6 +90,7 @@ const ContactForm = () => {
                 />
               </div>
 
+              {/* Row 4: Message */}
               <div className="flex flex-col w-full">
                 <label className="text-zinc-900 mb-2.5 font-normal">
                   How can I help you?
@@ -94,3 +109,6 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+/**
+ * Exporting ContactForm as default for use in the main App component.
+ */

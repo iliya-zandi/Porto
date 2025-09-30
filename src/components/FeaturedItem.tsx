@@ -1,12 +1,24 @@
+/**
+ * FeaturedItem Component
+ * Represents a single featured project or work item with image, title, year, and optional link.
+ */
+
 import React from "react";
 
+/**
+ * Props type for FeaturedItem component
+ */
 type FeaturedItemProps = {
-  image: string;
-  title: string;
-  year: string;
-  link?: string;
+  image: string; // Image URL of the featured item
+  title: string; // Title of the featured item
+  year: string; // Year of the project or work
+  link?: string; // Optional link URL; defaults to "/"
 };
 
+/**
+ * FeaturedItem component
+ * Renders an article with a clickable image, title, and year.
+ */
 const FeaturedItem: React.FC<FeaturedItemProps> = ({
   image,
   title,
@@ -31,3 +43,6 @@ const FeaturedItem: React.FC<FeaturedItemProps> = ({
 };
 
 export default FeaturedItem;
+/**
+ * Exporting FeaturedItem as default for use in featured work sections.
+ */

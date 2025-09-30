@@ -1,6 +1,14 @@
+/**
+ * WorkTogether Component
+ * Renders a section highlighting collaboration opportunities with project offerings.
+ */
+
 import React from "react";
 
-const WorkTogether = () => {
+/**
+ * WorkTogether functional component
+ */
+const WorkTogether: React.FC = () => {
   return (
     <div className="box">
       <div className="container mx-auto max-w-screen-xl py-16">
@@ -60,3 +68,6 @@ const WorkTogether = () => {
 };
 
 export default WorkTogether;
+/**
+ * Exporting WorkTogether as default for use in other components.
+ */

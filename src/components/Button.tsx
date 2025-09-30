@@ -1,12 +1,24 @@
+/**
+ * Button Component
+ * A reusable button component that supports optional links, custom classes, and button types.
+ */
+
 import React from "react";
 
+/**
+ * Props type for Button component
+ */
 type ButtonProps = {
-  children: React.ReactNode;
-  link?: string;
-  className?: string;
-  type?: "button" | "submit" | "reset";
+  children: React.ReactNode; // Content inside the button
+  link?: string; // Optional URL; if provided, an <a> overlay is rendered
+  className?: string; // Optional additional CSS classes
+  type?: "button" | "submit" | "reset"; // HTML button type
 };
 
+/**
+ * Button component
+ * Renders a styled button with optional link overlay.
+ */
 const Button: React.FC<ButtonProps> = ({
   children,
   link,
@@ -27,3 +39,6 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
+/**
+ * Exporting Button as default for use in other components.
+ */
